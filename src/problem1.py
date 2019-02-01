@@ -125,9 +125,25 @@ def problem1(n):
       :type n: int
       :rtype: int
     """
-    
+    fib=[0,1]
+    count=2
+    nextnumber=2
+    while True:
+        fib=fib+[nextnumber]
+        nextnumber=fib[count]+fib[count-1]
+        if fib[count]>=n:
+            return fib[count-1]
+        else:
+            count=count+1
+    #Part 1a
+   # count=1
+   # while True:
+    #    if fibonacci(count)>=n:
+    #        return fibonacci(count-1)
+    #    else:
+     #       count=count+1
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # **** IMPORTANT ****:
     # We supplied a   fibonacci   function above.
