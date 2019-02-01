@@ -271,14 +271,12 @@ def problem4(seq_of_seq, n):
       :type n:          int
       :rtype: int
     """
-    while True:
-        for k in range(len(seq_of_seq)):
-            sublist=seq_of_seq[k]
-            for j in range(len(sublist)):
-                if is_prime(sublist[j]):
-                    if sublist[j]>n:
-                        return sublist[j]
-        return -1
+    for k in range(len(seq_of_seq)):
+        sublist=seq_of_seq[k]
+        for j in range(len(sublist)):
+            if is_prime(sublist[j]) and sublist[j]>n:
+                return sublist[j]
+    return -1
 
     # -------------------------------------------------------------------------
     # DONE: 3. Implement and test this function.
