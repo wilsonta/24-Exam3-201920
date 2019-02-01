@@ -135,7 +135,7 @@ def problem1(n):
             return fib[count-1]
         else:
             count=count+1
-    #Part 1a
+    #Part 1b
    # count=1
    # while True:
     #    if fibonacci(count)>=n:
