@@ -125,6 +125,7 @@ def problem1(n):
       :type n: int
       :rtype: int
     """
+    
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
